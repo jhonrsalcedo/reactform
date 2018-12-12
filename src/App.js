@@ -18,18 +18,18 @@ class App extends Component {
    }
    handleLastName = (changeLastName) => {
      this.setState({
-       lastname: changeLastName.target.value
+      lastName: changeLastName.target.value
      });
    }
 
   render() {
     return (
       <div className="App">
-        <h4>Formulario</h4>
+        <h4>Formulario</h4> <br></br>
         <div>
-          <label>Name: </label>
+          <label>Nombre:&nbsp; </label>
           <input type='text' onChange={changeName => this.handleName(changeName)}/> &nbsp;
-          <label>Apellido: </label>
+          <label>Apellidos:&nbsp; </label>
           <input type='text' onChange={changeLastName => this.handleLastName(changeLastName)}/>
         </div>
         <div>
