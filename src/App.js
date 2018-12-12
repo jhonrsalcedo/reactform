@@ -8,7 +8,7 @@ class App extends Component {
      super();
      this.state ={
        name: '',
-       lastname: ''
+       lastName: ''
      }
    }
    handleName = (changeName) => {
@@ -16,8 +16,8 @@ class App extends Component {
        name: changeName.target.value
      });
    }
-   changeLastName = (changeLastName) => {
-     this.setState.bind({
+   handleLastName = (changeLastName) => {
+     this.setState({
        lastname: changeLastName.target.value
      });
    }
@@ -33,7 +33,7 @@ class App extends Component {
           <input type='text' onChange={changeLastName => this.handleLastName(changeLastName)}/>
         </div>
         <div>
-          {this.state.name} {this.state.lastname}
+          {this.state.name} {this.state.lastName}
         </div>
       </div>
     );
